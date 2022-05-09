@@ -1,0 +1,115 @@
+.body {
+  background-color: #f6fdff;
+}
+
+/* Font List */
+.desktop-h1 {
+  font-size: 64px;
+  line-height: 140%;
+  font-weight: bold;
+}
+.desktop-h2 {
+  font-size: 40px;
+  line-height: 140%;
+  font-weight: bold;
+}
+.desktop-h3 {
+  font-size: 32px;
+  line-height: 140%;
+  font-weight: bold;
+}
+.desktop-h4 {
+  font-size: 24px;
+  line-height: 140%;
+  font-weight: bold;
+}
+.desktop-subtitle {
+  font-size: 24px;
+  line-height: 140%;
+  font-weight: 500;
+}
+.desktop-subtitle-small {
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 500;
+}
+.desktop-body {
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: nrmal;
+}
+.desktop-body2 {
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 500;
+}
+.desktop-body-small {
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: normal;
+}
+.desktop-button {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/* Color Palette */
+
+.black-primary {
+  color: #393e50;
+}
+.black-secondary {
+  color: #a8adb9;
+}
+.primary {
+  color: #30a7d7;
+}
+
+/* Spacing */
+
+.padding-top {
+  padding-top: 64px;
+}
+.padding-bottom {
+  padding-bottom: 64px;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  background-color: #30a7d7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 312px;
+  height: 44px;
+}
+#navbar .active a {
+  color: #30a7d7;
+}
+
+#navbar a {
+  color: #393e50;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 40px;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .logo-mobile {
+        display: block;
+        text-align: center;
+      }
+      .logo-all{
+          display:none;
+      }
+  }
+.main {
+  background-image: url(../images/BG.png);
+}
