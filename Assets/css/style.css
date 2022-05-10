@@ -6,22 +6,22 @@
 .desktop-h1 {
   font-size: 64px;
   line-height: 140%;
-  font-weight: bold;
+  font-weight: 700;
 }
 .desktop-h2 {
   font-size: 40px;
   line-height: 140%;
-  font-weight: bold;
+  font-weight: 700;
 }
 .desktop-h3 {
   font-size: 32px;
   line-height: 140%;
-  font-weight: bold;
+  font-weight: 700;
 }
 .desktop-h4 {
   font-size: 24px;
   line-height: 140%;
-  font-weight: bold;
+  font-weight: 700;
 }
 .desktop-subtitle {
   font-size: 24px;
@@ -36,17 +36,17 @@
 .desktop-body {
   font-size: 16px;
   line-height: 140%;
-  font-weight: nrmal;
+  font-weight: 400;
 }
 .desktop-body2 {
   font-size: 16px;
   line-height: 140%;
-  font-weight: 500;
+  font-weight: 700;
 }
 .desktop-body-small {
   font-size: 14px;
   line-height: 140%;
-  font-weight: normal;
+  font-weight: 400;
 }
 .desktop-button {
   font-size: 14px;
@@ -65,15 +65,18 @@
 .primary {
   color: #30a7d7;
 }
+.secondary {
+  color: #3c61c9;
+}
 
-/* Spacing */
-
+/* Spacing Start*/
 .padding-top {
   padding-top: 64px;
 }
 .padding-bottom {
   padding-bottom: 64px;
 }
+/* Spacing End*/
 
 .button {
   font-size: 14px;
@@ -97,19 +100,150 @@
   margin-left: 40px;
 }
 
-.logo-mobile {
-  display: none;
+.main {
+  /* background-image: url(../images/BG.png); */
 }
 
-@media screen and (max-width: 992px) {
-    .logo-mobile {
-        display: block;
-        text-align: center;
-      }
-      .logo-all{
-          display:none;
-      }
+/* Hero Section Start */
+@media screen and (max-width: 1200px) {
+  .desktop-h1 {
+    font-size: 50px;
+    line-height: 140%;
+    font-weight: 700;
   }
-.main {
-  background-image: url(../images/BG.png);
+  .hero-section-image {
+    max-width: 608px;
+    max-height: 400px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .desktop-h1 {
+    font-size: 40px;
+    line-height: 150%;
+    font-weight: 700;
+  }
+  .hero-section-image {
+    width: 608px;
+    height: 400px;
+  }
+}
+
+/* Our Service Start */
+.service-card {
+  padding: 40px;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.service-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #d5d9e2;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.hover-state {
+  display: none;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.normal-state {
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.service-card:hover {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.service-card:hover .service-icon {
+  background-color: #3c61c9;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.service-card:hover .normal-state {
+  display: none;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.service-card:hover .hover-state {
+  display: block;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.arrow-icon {
+  background-color: #3c61c9;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.service-card:hover .arrow-icon {
+  visibility: visible;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.service-card:hover .service-tag {
+  color: #30a7d7;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.learn-more {
+  display: flex;
+  align-items: baseline ;
+}
+.service-card:hover .learn-more-button {
+  color:#393e50;
+}
+/* Our Service End */
+
+.featured-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:20px;
+  text-align: center;
+  background-color: #FFFFFF;
+  box-shadow: 0px 25px 100px rgba(48, 167, 215, 0.08);
+  border-radius: 10px;
+}
+
+.first-card{
+  margin-top: 6rem
+}
+
+.last-card{
+  margin-top: -6rem
+}
+.icon-section{
+  width: 60px;
+  height: 60px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 30px rgba(48, 167, 215, 0.1);
+}
+
+.footer-info{
+  max-width:424px;
+  width:100%
+}
+.footer-menu a{
+  text-decoration: none;
+  color: #393e50
 }
