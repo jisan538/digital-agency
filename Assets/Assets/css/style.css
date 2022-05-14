@@ -1,0 +1,577 @@
+.body {
+    background-color: #f6fdff;
+    font-family: "Poppins", sans-serif;
+}
+
+/********************  Font List Start  ********************/
+.desktop-h1 {
+    font-size: 63px;
+    line-height: 140%;
+    font-weight: 700;
+}
+.desktop-h2 {
+    font-size: 40px;
+    line-height: 140%;
+    font-weight: 700;
+}
+.desktop-h3 {
+    font-size: 32px;
+    line-height: 140%;
+    font-weight: 700;
+}
+.desktop-h4 {
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 700;
+}
+.desktop-subtitle {
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 500;
+}
+.desktop-subtitle-small {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 500;
+}
+.desktop-body {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+}
+.desktop-body2 {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 700;
+}
+.desktop-body-small {
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 400;
+}
+.desktop-button {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+/********************  Font List End  ********************/
+
+/********************  Color Palette Start  ********************/
+.black-primary {
+    color: #393e50;
+}
+.black-secondary {
+    color: #a8adb9;
+}
+.primary {
+    color: #30a7d7;
+}
+.secondary {
+    color: #3c61c9;
+}
+/********************  Color Palette End  ********************/
+
+/********************  Spacing Start  ********************/
+.padding-top {
+    padding-top: 4rem;
+}
+.padding-bottom {
+    padding-bottom: 4rem;
+}
+.section-gap {
+    padding-top: 2.5rem;
+}
+/********************  Spacing End  ********************/
+
+/********************  Button Start  ********************/
+.button {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: #30a7d7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 312px;
+    height: 44px;
+}
+.button:hover {
+    border: 1px solid #30a7d7;
+    background-color: #fff;
+    color: #30a7d7;
+    transition: all 0.5s ease-in-out;
+}
+.button-broke {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: #30a7d7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 296px;
+    height: 44px;
+    display: none;
+}
+
+.button-broke:hover {
+    border: 1px solid #30a7d7;
+    background-color: #fff;
+    color: #30a7d7;
+    transition: all 0.5s ease-in-out;
+}
+.vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/********************  Button End  ********************/
+
+.subtitle {
+    width: 424px;
+}
+
+/********************  Navbar Start  ********************/
+#navbar .active a {
+    color: #30a7d7;
+}
+#navbar a {
+    color: #393e50;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 40px;
+}
+.navbar-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/********************  Navbar End  ********************/
+
+/********************  Hero Section Start  ********************/
+.hero-section-image {
+    max-width: 648px;
+    width: 100%;
+}
+/********************  Hero Section End  ********************/
+
+/********************  Our Services Start  ********************/
+.service-card {
+    padding: 40px;
+    margin-bottom: 24px;
+}
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #d5d9e2;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+.normal-state {
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+.hover-state {
+    display: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+.service-card:hover {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 4px 32px rgba(48, 167, 215, 0.1);
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+.service-card:hover .service-icon {
+    background-color: #3c61c9;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+.service-card:hover .normal-state {
+    display: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+.service-card:hover .hover-state {
+    display: block;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+.service-card:hover .service-tag {
+    color: #30a7d7;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+/********************  Our Services End  ********************/
+
+/********************  Case Studies Start  ********************/
+.case-studies-image {
+    border-radius: 12px;
+}
+.case-studies {
+    display: none;
+}
+.first-column img:nth-child(1) {
+    width: 100%;
+    max-width: 100%;
+    height: 450px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    object-fit: cover;
+}
+
+.first-column img:nth-child(2) {
+    width: 100%;
+    height: 380px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.second-column img:nth-child(1) {
+    width: 100%;
+    height: 240px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    object-fit: cover;
+}
+.third-column img:nth-child(1) {
+    width: 100%;
+    height: 240px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.fourth-column img:nth-child(1) {
+    width: 100%;
+    height: 283px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    object-fit: cover;
+}
+.fifth-column img:nth-child(1) {
+    width: 100%;
+    height: 283px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.case-studies-full,
+.case-studies {
+    padding-top: 40px;
+    width: auto;
+}
+/******************** Case Studies End  ********************/
+
+/********************  Recent Projects Start  ********************/
+.recent-projects-slider {
+    overflow: hidden;
+}
+/********************  Recent Projects End  ********************/
+
+/********************  Company Brand Logo Start  ********************/
+.brand-logo-slider {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+    overflow: hidden;
+}
+.brand-logo-slider img {
+    margin-left: 5rem;
+}
+/********************  Company Brand Logo End  ********************/
+
+/********************  Features Start  ********************/
+
+.featured-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 25px 100px rgba(48, 167, 215, 0.08);
+    border-radius: 10px;
+}
+
+.first-card {
+    margin-top: 6rem;
+}
+
+.last-card {
+    margin-top: -6rem;
+}
+.icon-section {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 30px rgba(48, 167, 215, 0.1);
+}
+/********************  Features End  ********************/
+
+/********************  Subscription Start  ********************/
+.subscription {
+    background-color: #30a7d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 40px;
+}
+.input-field {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    max-width: 500px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.input-field input {
+    border: none;
+}
+/********************  Subscription End  ********************/
+
+/********************  Footer Start  ********************/
+.footer-info {
+    max-width: 424px;
+    width: 100%;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-menu a {
+    text-decoration: none;
+    color: #393e50;
+}
+.footer-menu a {
+    text-decoration: none;
+    color: #393e50;
+}
+/********************  Footer End  ********************/
+
+/********************  Media Queries Start  ********************/
+@media screen and (max-width: 1400px) {
+    .desktop-h1 {
+        font-size: 40px;
+        line-height: 140%;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 991px) {
+    #navbar a {
+        color: #393e50;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .third-column {
+        display: none;
+    }
+    .desktop-h1 {
+        text-align: center;
+    }
+    .title {
+        text-align: center;
+    }
+    .subtitle {
+        text-align: center;
+        width: 100%;
+    }
+    .button {
+        display: none;
+    }
+    .button-broke {
+        display: inline;
+        height: 44px;
+        width: 296px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .logo-all {
+        display: none;
+    }
+    .case-studies {
+        display: block;
+    }
+    .case-studies-full {
+        display: none;
+    }
+    .desktop-h1 {
+        font-size: 32px;
+        line-height: 150%;
+        font-weight: 700;
+        text-align: center;
+    }
+    .subtitle {
+        text-align: center;
+        width: 100%;
+    }
+    .desktop-h2 {
+        font-size: 32px;
+        line-height: 140%;
+        font-weight: 700;
+    }
+    .title {
+        text-align: center;
+    }
+    .service-card {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .service-tag {
+        text-align: center;
+    }
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+    }
+    .normal-state {
+        width: 25px;
+    }
+    .hover-state {
+        width: 25px;
+    }
+    .desktop-body {
+        font-size: 14px;
+        line-height: 140%;
+        font-weight: 400;
+    }
+    .desktop-subtitle {
+        font-size: 18px;
+        line-height: 140%;
+        font-weight: 500;
+    }
+    .brand-logo-slider img {
+        width: 88px;
+        margin-left: 3rem;
+    }
+    .first-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    .footer-info,
+    .company-mail {
+        display: none;
+    }
+    .footer-logo {
+        display: flex;
+        align-items: center;
+    }
+    .footer-menu-company {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .locaion {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 570px) {
+    .first-card {
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+    }
+    .last-card {
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 479px) {
+    .padding-top {
+        padding-top: 40px;
+    }
+    .padding-bottom {
+        padding-bottom: 40px;
+    }
+    .desktop-h1 {
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: 700;
+        text-align: center;
+    }
+    .subtitle {
+        text-align: center;
+        font-size: 14px;
+    }
+    .desktop-subtitle {
+        font-size: 16px;
+        line-height: 140%;
+        font-weight: 500;
+    }
+    .button-broke {
+        display: inline;
+        height: 30px;
+        width: 150px;
+    }
+    .desktop-h2 {
+        font-size: 24px;
+        line-height: 140%;
+        font-weight: 700;
+    }
+    .title {
+        text-align: center;
+    }
+    .subtitle {
+        width: 100%;
+        text-align: center;
+    }
+    .service-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+    }
+    .normal-state {
+        width: 20px;
+    }
+    .hover-state {
+        width: 20px;
+    }
+    .service-tag {
+        font-size: 16px;
+        line-height: 140%;
+        font-weight: 500;
+    }
+    .service-details {
+        font-size: 14px;
+        line-height: 140%;
+        font-weight: 400;
+    }
+    .recent-projects-slider img {
+        object-fit: cover;
+        width: 100%;
+        height: 218px;
+        border-radius: 12px;
+    }
+    .subscription {
+        border-radius: 20px;
+    }
+    .input-field {
+        margin-top: 20px;
+    }
+}
+/********************  Media Queries End  ********************/
