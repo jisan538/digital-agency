@@ -132,6 +132,15 @@
 }
 
 /********************  Navbar Start  ********************/
+#navigation{
+  overflow: hidden;
+  transition: 0.4s;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  padding: 40px 20px;
+  z-index: 50000;
+}
 #navbar .active a {
   color: #30a7d7;
 }
@@ -150,6 +159,9 @@
 /********************  Navbar End  ********************/
 
 /********************  Hero Section Start  ********************/
+.main{
+  margin-top:64px;
+}
 .hero-section-image {
   max-width: 648px;
   width: 100%;
@@ -474,7 +486,7 @@
   }
   .footer-info,
   .company-mail {
-      display: none;
+      text-align: center;
   }
   .footer-logo {
       display: flex;
@@ -569,6 +581,18 @@
   }
   .input-field {
       margin-top: 20px;
+  }
+  .service-details{
+    display:none;
+  }
+  .service-card:hover .service-details{
+    display:block;
+  }
+  .service-card:hover .service-tag{
+    display:none;
+  }
+  .service-card:hover .service-icon{
+    display:none;
   }
 }
 /********************  Media Queries End  ********************/

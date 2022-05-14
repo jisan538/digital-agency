@@ -31,10 +31,8 @@
     </head>
     <body class="body">
         <!--------------------  Navbar Start -------------------->
-        <nav
-            class="navbar navbar-expand-md navbar-light"
-            style="margin-top: 20px"
-        >
+        <div id="navigation">
+          <nav class="navbar navbar-expand-md">
             <div class="container">
                 <div>
                     <svg
@@ -112,6 +110,7 @@
                 </div>
             </div>
         </nav>
+        </div>
         <!--------------------  Navbar Start -------------------->
 
         <!--------------------  Hero Section Start -------------------->
@@ -160,7 +159,7 @@
                     placeholder text commonly used to demonstrate
                 </p>
                 <div class="row section-gap">
-                    <div class="col-6 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="service-card">
                             <div class="service-icon">
                                 <img
@@ -188,7 +187,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="service-card">
                             <div class="service-icon">
                                 <img
@@ -497,7 +496,7 @@
 
         <!-------------------- Subscribe Start -------------------->
         <div class="padding-top padding-bottom">
-          <div class="container subscription-box">
+          <div class="container">
               <div class="subscription">
                 <p>Get Notified About Project</p>
             <h2 class="desktop-h2">
@@ -649,6 +648,21 @@
                  }
                 ]
             });
+
+            window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop >= 80 || document.documentElement.scrollTop >= 80) {
+    document.getElementById("navigation").style.backgroundColor = "#fff";
+    document.getElementById("navigation").style.boxShadow = "0px 2px 20px rgba(0, 0, 0, 0.1)";
+    document.getElementById("navigation").style.paddingTop = "10px";
+    document.getElementById("navigation").style.paddingBottom = "10px";
+  } else {
+    document.getElementById("navigation").style.backgroundColor = "transparent";
+    document.getElementById("navigation").style.boxShadow = "none";
+    document.getElementById("navigation").style.paddingTop  = "40px";
+    document.getElementById("navigation").style.paddingBottom  = "20px";
+  }
+}
         </script>
         <!--------------------  Internal JavaScript End  -------------------->
     </body>
