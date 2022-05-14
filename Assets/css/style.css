@@ -138,7 +138,6 @@
   position: sticky;
   width: 100%;
   top: 0;
-  padding: 40px 20px;
   z-index: 50000;
 }
 #navbar .active a {
@@ -416,6 +415,18 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .padding-top {
+    padding-top: 3rem;
+  }
+  .padding-bottom {
+    padding-bottom: 3rem;
+  }
+  .section-gap {
+    padding-top: 2rem;
+  }
+  .main{
+    margin-top:0px;
+  }
   .logo-all {
       display: none;
   }
