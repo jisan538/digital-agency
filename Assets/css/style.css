@@ -134,11 +134,13 @@
 /********************  Navbar Start  ********************/
 #navigation{
   overflow: hidden;
-  transition: 0.4s;
+  transition: 0.5s;
   position: sticky;
   width: 100%;
   top: 0;
   z-index: 50000;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 #navbar .active a {
   color: #30a7d7;
@@ -158,9 +160,6 @@
 /********************  Navbar End  ********************/
 
 /********************  Hero Section Start  ********************/
-.main{
-  margin-top:64px;
-}
 .hero-section-image {
   max-width: 648px;
   width: 100%;
@@ -330,6 +329,7 @@
 
 /********************  Subscription Start  ********************/
 .subscription {
+  background-image: url('assets/images/subscription-bg.png');
   background-color: #30a7d7;
   display: flex;
   flex-direction: column;
@@ -352,6 +352,8 @@
 }
 .input-field input {
   border: none;
+  max-width:450px;
+  width:100%;
 }
 /********************  Subscription End  ********************/
 
