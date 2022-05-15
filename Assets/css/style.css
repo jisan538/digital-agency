@@ -358,6 +358,7 @@
 
 /********************  Footer Start  ********************/
 .footer-info {
+  padding-top:40px;
   max-width: 424px;
   width: 100%;
 }
@@ -368,11 +369,54 @@
 }
 .footer-menu a {
   text-decoration: none;
+  padding-bottom:14px;
   color: #393e50;
 }
 .footer-menu a {
   text-decoration: none;
   color: #393e50;
+}
+.social-links{
+  display: flex;
+}
+.social-icons{
+  width:40px;
+  height:40px;
+  border-radius:20px;
+  margin-right:15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.facebook:hover{
+  background-color: #3D5998;
+}
+.facebook:hover .normal-state{
+  display:none;
+}
+.facebook:hover .hover-state{
+  display:block;
+}
+.twitter:hover{
+  background-color: #00ACEE;
+}
+.twitter:hover .normal-state{
+  display:none;
+}
+.twitter:hover .hover-state{
+  display:block;
+}
+.instagram:hover{
+  background: linear-gradient(33.6deg, #F8C66A 11.23%, #F69048 26.62%, #F05849 45.56%, #CD3F5F 65.29%, #57469C 87%);
+}
+.instagram:hover .normal-state{
+  display:none;
+}
+.instagram:hover .hover-state{
+  display:block;
+}
+.copyright{
+  padding-bottom: 40px;
 }
 /********************  Footer End  ********************/
 
@@ -413,6 +457,9 @@
       display: inline;
       height: 44px;
       width: 296px;
+  }
+  .copyright{
+    padding-bottom: 10px;
   }
 }
 @media screen and (max-width: 767px) {
