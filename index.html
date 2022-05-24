@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- External CSS Link Start -->
-        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/home.css" />
         <!-- External CSS Link End -->
         <!-- Bootstrap CSS Link Start-->
         <link
@@ -95,13 +95,13 @@
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item desktop-body">
-                            <a href="#" class="nav-link">About Us</a>
+                            <a href="./pages/about-us.html" class="nav-link">About Us</a>
                         </li>
                         <li class="nav-item desktop-body">
                             <a href="#" class="nav-link">Services</a>
                         </li>
                         <li class="nav-item desktop-body">
-                            <a href="#" class="nav-link">Case Studies</a>
+                            <a href="./pages/case-studies.html" class="nav-link">Case Studies</a>
                         </li>
                         <li class="nav-item desktop-body">
                             <a href="#" class="nav-link">Contact</a>
@@ -123,7 +123,7 @@
                                 Digital Solutions for
                                 <span class="primary">Growing Business</span>
                             </h1>
-                            <p class="black-secondary subtitle">
+                            <p class="black-secondary subtitle" style="margin-bottom:64px">
                                 “We have a chance, if we stay focused and choose
                                 wisely, to really continue to impact people’s
                                 lives in some small way for the better.”
@@ -132,13 +132,13 @@
                         </div>
                         <div class="col-12 col-sm-12 col-lg-6 mb-4">
                             <img
-                                src="assets/images/hero-section.webp"
+                                src="../assets/images/hero-section.webp"
                                 alt="desktop"
                                 class="hero-section-image"
                             />
                         </div>
                         <div class="col-12 col-sm-12 col-lg-6 vertical-center">
-                            <button class="mt-4 button-broke">
+                            <button class="button-broke">
                                 Get A Quote
                             </button>
                         </div>
@@ -160,32 +160,34 @@
                 </p>
                 <div class="row section-gap">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <img
-                                    src="assets/images/mail.png"
-                                    alt="mail"
-                                    class="normal-state"
-                                />
-                                <img
-                                    src="assets/images/mail-hover.png"
-                                    alt="mail"
-                                    class="hover-state"
-                                />
+                        <a href="./pages/email-marketing.html" target="_blank" class="services-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <img
+                                        src="assets/images/mail.png"
+                                        alt="mail"
+                                        class="normal-state"
+                                    />
+                                    <img
+                                        src="assets/images/mail-hover.png"
+                                        alt="mail"
+                                        class="hover-state"
+                                    />
+                                </div>
+                                <p
+                                    class="desktop-subtitle black-primary service-tag"
+                                >
+                                    Email Marketing
+                                </p>
+                                <p
+                                    class="desktop-body black-secondary service-details"
+                                >
+                                    Lorem ipsumIn publishing and graphic design,
+                                    Lorem ipsum is a placeholder text commonly used
+                                    to demonstrate
+                                </p>
                             </div>
-                            <p
-                                class="desktop-subtitle black-primary service-tag"
-                            >
-                                Email Marketing
-                            </p>
-                            <p
-                                class="desktop-body black-secondary service-details"
-                            >
-                                Lorem ipsumIn publishing and graphic design,
-                                Lorem ipsum is a placeholder text commonly used
-                                to demonstrate
-                            </p>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="service-card">
@@ -334,28 +336,89 @@
                 </p>
                 <div class="case-studies-full">
                     <div class="row">
-                        <div class="col-sm-6 col-xl-4 first-column">
-                            <img src="assets/images/img1.png" alt="" />
-                            <img src="assets/images/img4.png" alt="" />
+                        <div class="col-md-12 col-lg-6">
+                            <div class="col-12">
+                                <div class="img-wrapper">
+                                    <img src="assets/images/img1.png" alt="" />
+                                    <div class="overlay">
+                                        <p>
+                                            Increase your monthly traffic and
+                                            sales
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 24px">
+                                <div class="col-6">
+                                    <div class="img-wrapper">
+                                        <img
+                                            src="assets/images/img2.png"
+                                            alt=""
+                                        />
+                                        <div class="overlay">
+                                            <p>
+                                                Increase your monthly traffic
+                                                and sales
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="img-wrapper">
+                                        <img
+                                            src="assets/images/img3.png"
+                                            alt=""
+                                        />
+                                        <div class="overlay">
+                                            <p>
+                                                Increase your monthly traffic
+                                                and sales
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-6 col-xl-8">
+                        <div class="col-md-12 col-lg-6 second-part">
                             <div class="row">
-                                <div class="col-md-12 col-lg-6 second-column">
-                                    <img src="assets/images/img3.png" alt="" />
+                                <div class="col-6">
+                                    <div class="img-wrapper">
+                                        <img
+                                            src="assets/images/img4.png"
+                                            alt=""
+                                        />
+                                        <div class="overlay">
+                                            <p>
+                                                Increase your monthly traffic
+                                                and sales
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-6 third-column">
-                                    <img
-                                        src="assets/images/img2.png"
-                                        alt=""
-                                        class="test"
-                                    />
+                                <div class="col-6">
+                                    <div class="img-wrapper">
+                                        <img
+                                            src="assets/images/img5.png"
+                                            alt=""
+                                        />
+                                        <div class="overlay">
+                                            <p>
+                                                Increase your monthly traffic
+                                                and sales
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <div class="col-md-12 fourth-column">
-                                    <img src="assets/images/img5.png" alt="" />
-                                </div>
-                                <div class="col-md-12 fifth-column">
+                            </div>
+                            <div class="col-12">
+                                <div class="img-wrapper">
                                     <img src="assets/images/img6.png" alt="" />
+                                    <div class="overlay">
+                                        <p>
+                                            Increase your monthly traffic and
+                                            sales
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -466,18 +529,18 @@
         
         <!-------------------- Recent Projects Start -------------------->
         <div class="">
-          <div class="container">
-                <h2 class="desktop-h2 black-primary title">Recent <span class="primary">Projects</span></h2>
-                <p class="black-secondary desktop-body  subtitle">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate</p>
+            <div class="container">
+                  <h2 class="desktop-h2 black-primary title">Recent <span class="primary">Projects</span></h2>
+                  <p class="black-secondary desktop-body  subtitle">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate</p>
+            </div>
+               <div class="d-flex recent-projects-slider section-gap">
+                  <img src="assets/images/porjects1.png" alt="">
+                  <img src="assets/images/porjects2.png" alt="">
+                  <img src="assets/images/porjects3.png" alt="">
+                  <img src="assets/images/porjects4.png" alt="">
+                </div>
           </div>
-             <div class="d-flex recent-projects-slider section-gap">
-                <img src="assets/images/porjects1.png" alt="">
-                <img src="assets/images/porjects2.png" alt="">
-                <img src="assets/images/porjects3.png" alt="">
-                <img src="assets/images/porjects4.png" alt="">
-              </div>
-        </div>
-        <!-------------------- Recent Projects End -------------------->
+          <!-------------------- Recent Projects End -------------------->
 
         <!-------------------- Brand Show case Start -------------------->
         <div class="padding-top padding-bottom">
@@ -548,9 +611,9 @@
             <div class="col-6 col-md-6 col-xl-2">
                 <div class="footer-menu footer-menu-company"> 
                   <h5 class="desktop-body2 black-primary mb-3">Company</h5>
-               <a href="#">About Us</a>
+               <a href="./pages/about-us.html">About Us</a>
                <a href="#">Contact</a>
-                <a href="#">Case Studies</a>
+                <a href="./pages/case-studies.html">Case Studies</a>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-xl-3">
@@ -627,70 +690,14 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         ></script>
         <!--------------------  Slick Slider CDN End -------------------->
+        
+        <!--------------------  Internal Plugins Start -------------------->
 
-        <!--------------------  Internal JavaScript Start  -------------------->
-        <script type="text/javascript">
-            $(".case-studies-slider").slick({
-                arrows: false,
-                autoplay: true,
-                autoplaySpeed: 1500,
-            });
-            $(".recent-projects-slider").slick({
-                arrows: false,
-                slidesToShow: 3,
-                autoplay: true,
-                autoplaySpeed: 1500,
-                variableWidth: true,
-                responsive: [
-                  {
-                  breakpoint: 479,
-                  settings: {
-                      slidesToShow: 1,
-                      variableWidth: false,
-                    }
-                 }
-                ]
-            });
-            $(".brand-logo-slider").slick({
-                arrows: false,
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                speed: 9000, 
-                autoplay: true, 
-                autoplaySpeed: 0,
-                variableWidth: true,
-                cssEase: 'linear',
-                responsive: [
-                {
-                  breakpoint: 767,
-                  settings: {
-                      slidesToShow: 4,
-                    }
-                 },
-                  {
-                  breakpoint: 479,
-                  settings: {
-                      slidesToShow: 3,
-                    }
-                 }
-                ]
-            });
-
-        window.onscroll = function() {scrollFunction()};
-  function scrollFunction() {
-  if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
-    document.getElementById("navigation").style.backgroundColor = "#fff";
-    document.getElementById("navigation").style.boxShadow = "0px 2px 20px rgba(0, 0, 0, 0.1)";
-    document.getElementById("navigation").style.paddingTop = "010px";
-    document.getElementById("navigation").style.paddingBottom = "10px";
-  } else {
-    document.getElementById("navigation").style.backgroundColor = "transparent";
-    document.getElementById("navigation").style.boxShadow = "none";
-    document.getElementById("navigation").style.paddingTop = "20px";
-    document.getElementById("navigation").style.paddingBottom = "20px";
-  }
-}
-        </script>
-        <!--------------------  Internal JavaScript End  -------------------->
+        <script type="text/javascript" src="assets/plugins/case-studies-slider.js"></script>
+        <script type="text/javascript" src="assets/plugins/navbar.js"></script>
+        <script type="text/javascript" src="assets/plugins/brand-logo-slider.js"></script>
+        <script type="text/javascript" src="assets/plugins/recent-projects.js"></script>
+        
+        <!--------------------  Internal Plugins End -------------------->
     </body>
 </html>
